@@ -5,4 +5,4 @@ bases:
 configMapGenerator:
 - name: alpha-features
   literals:    
-  - ENABLE_ALPHA="true"
+  - ENABLE_ALPHA="false"

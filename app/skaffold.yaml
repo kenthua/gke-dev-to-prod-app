@@ -7,10 +7,10 @@ build:
   - image: gcr.io/kenthua-core/gke-flask-app
     buildpacks:
       builder: "gcr.io/buildpacks/builder:v1"
-deploy:
-  kustomize:
-    paths:
-    - https://github.com/kenthua/gke-dev-to-prod-blueprints?ref=main
+# deploy:
+#   kustomize:
+#     paths:
+#     - https://github.com/kenthua/gke-dev-to-prod-blueprints?ref=main
 profiles:
 - name: dev
   deploy:
