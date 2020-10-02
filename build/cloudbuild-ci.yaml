@@ -1,6 +1,6 @@
 steps:
 - id: build-tag-push-render
-  name: "gcr.io/k8s-skaffold/skaffold:v1.12.1"
+  name: "gcr.io/k8s-skaffold/skaffold:v1.15.0"
   entrypoint: '/bin/bash'
   args:
     - '-c'
@@ -19,7 +19,7 @@ steps:
 - id: git
   name: gcr.io/kenthua-core/gcloud
   entrypoint: 'bash'
-  args: [ '-c', '/builder/configure_git.sh' ]
+  args: [ '-c', '/configure_git.sh' ]
   volumes:
   - name: 'ssh'
     path: /root/.ssh
