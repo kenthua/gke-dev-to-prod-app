@@ -9,8 +9,8 @@ steps:
       cd app
       skaffold render -p prod --output ../resources.yaml
   env:
-    - 'CLOUDSDK_COMPUTE_REGION=us-west1'
-    - 'CLOUDSDK_CONTAINER_CLUSTER=oregon'
+    - 'CLOUDSDK_COMPUTE_ZONE=us-west1-b'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=skaffold-prod-cluster'
     - 'GCLOUD_PROJECT=kenthua-core'
   volumes:
     - name: 'ssh'

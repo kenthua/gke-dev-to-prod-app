@@ -10,7 +10,7 @@ build:
 deploy:
   kustomize:
     paths:
-    - https://github.com/kenthua/gke-dev-to-prod-blueprints/
+    - https://github.com/kenthua/gke-dev-to-prod-blueprints?ref=main
 profiles:
 - name: dev
   deploy:
@@ -21,4 +21,4 @@ profiles:
   deploy:
     kustomize:
       paths:
-      - https://github.com/kenthua/gke-dev-to-prod-blueprints/overlays/prod
+      - https://github.com/kenthua/gke-dev-to-prod-blueprints/overlays/prod?ref=main
