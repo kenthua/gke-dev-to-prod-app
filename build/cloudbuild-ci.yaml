@@ -11,13 +11,13 @@ steps:
   env:
     - 'CLOUDSDK_COMPUTE_REGION=us-west1'
     - 'CLOUDSDK_CONTAINER_CLUSTER=oregon'
-    - 'GCLOUD_PROJECT=agmsb-k8s'
+    - 'GCLOUD_PROJECT=kenthua-core'
   volumes:
     - name: 'ssh'
       path: /root/.ssh
 
 - id: git
-  name: gcr.io/agmsb-k8s/gcloud
+  name: gcr.io/kenthua-core/gcloud
   entrypoint: 'bash'
   args: [ '-c', '/builder/configure_git.sh' ]
   volumes:

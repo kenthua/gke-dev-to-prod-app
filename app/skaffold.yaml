@@ -4,13 +4,13 @@ metadata:
   name: gke-dev-to-prod-app
 build:
   artifacts:
-  - image: gcr.io/agmsb-k8s/gke-flask-app
+  - image: gcr.io/kenthua-core/gke-flask-app
     buildpacks:
       builder: "gcr.io/buildpacks/builder:v1"
 deploy:
   kustomize:
     paths:
-    - https://github.com/agmsbush/gke-dev-to-prod-blueprints/
+    - https://github.com/kenthua/gke-dev-to-prod-blueprints/
 profiles:
 - name: dev
   deploy:
@@ -21,4 +21,4 @@ profiles:
   deploy:
     kustomize:
       paths:
-      - https://github.com/agmsbush/gke-dev-to-prod-blueprints/overlays/prod
+      - https://github.com/kenthua/gke-dev-to-prod-blueprints/overlays/prod

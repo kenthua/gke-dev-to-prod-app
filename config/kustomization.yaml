@@ -1,7 +1,7 @@
 commonLabels:
   env: dev
 bases:
-- https://github.com/agmsbush/gke-dev-to-prod-blueprints/resources
+- https://github.com/kenthua/gke-dev-to-prod-blueprints/resources
 configMapGenerator:
 - name: alpha-features
   literals:    
