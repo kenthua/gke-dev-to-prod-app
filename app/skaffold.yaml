@@ -3,6 +3,8 @@ kind: Config
 metadata:
   name: gke-dev-to-prod-app
 build:
+  tagPolicy:
+    sha256: {}
   artifacts:
   - image: gcr.io/kenthua-core/gke-flask-app
     buildpacks:
